@@ -57,7 +57,7 @@ ENV PATH /home/builder/esptool2:$PATH
 # Install sming
 RUN git clone https://github.com/SmingHub/Sming.git /home/builder/Sming \
     && cd /home/builder/Sming \
-    && git reset --hard b0568b58db7d63d1078b29eea721554338932bc1
+    && git reset --hard 5c37d69f45963dcc25e2fc63ce389494f337f568
 RUN cd /home/builder/Sming/Sming; make clean; make
 
 USER root
